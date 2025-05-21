@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>JavaScript Event Assignment</h1>
+
+  <!-- Button for click, double-click, and hover events -->
+  <button id="actionBtn">Click Me!</button>
+
+  <!-- Keypress Detection -->
+  <input type="text" id="keypressInput" placeholder="Type something..." />
+
+  <!-- Accordion-style content -->
+  <div class="accordion">
+    <button class="accordion-toggle">Toggle Content</button>
+    <div class="accordion-content">
+      <p>This is hidden content revealed by clicking the toggle button.</p>
+    </div>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="galleryImage" src="https://www.pexels.com/photo/mosque-of-muhammad-ali-in-egypt-6109471/" alt="Gallery Image" />
+    <button id="nextImage">Next Image</button>
+  </div>
+
+  <!-- Form with validation -->
+  <form id="signupForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+    <span id="emailFeedback"></span>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required minlength="8" />
+    <span id="passwordFeedback"></span>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
